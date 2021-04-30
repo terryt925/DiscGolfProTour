@@ -8,7 +8,7 @@ class CourseOne {
 
   placeTree(ctx, x, y) {
     let tree = new Image();
-    tree.src = '../public/tree1.png';
+    tree.src = 'tree1.png';
     tree.onload = function(){
       ctx.drawImage(tree, x, y, 60, 100);
     }
