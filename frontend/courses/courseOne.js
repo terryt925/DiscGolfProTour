@@ -1,9 +1,9 @@
 class CourseOne {
   constructor(ctx) {
     this.ctx = ctx;
-    this.placeTree(this.ctx, 800, 200)
-    this.placeTree(this.ctx, 400, 250)
-    this.placeTree(this.ctx, 500, 450)
+    // this.placeTree(this.ctx, 800, 200)
+    // this.placeTree(this.ctx, 400, 250)
+    // this.placeTree(this.ctx, 500, 450)
   }
 
   placeTree(ctx, x, y) {

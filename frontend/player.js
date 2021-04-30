@@ -11,7 +11,7 @@ class Player {
   teePad(x, y) {
     if (this.hole === 1) {
       this.horizontalTeePad(x, y);
-      new Disc(this.ctx, x, y)
+      // new Disc(this.ctx, x+50, y+25)
     }
   }
 

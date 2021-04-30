@@ -1,3 +1,5 @@
+import Basket from "./basket.js";
+
 class Disc {
   constructor(ctx, x, y) {
     this.ctx = ctx
@@ -8,10 +10,17 @@ class Disc {
 
   disc() {
     this.ctx.beginPath();
-    this.ctx.arc(this.x+50, this.y+25, 10, 0, Math.PI * 2, true);  
+    this.ctx.arc(this.x, this.y, 10, 0, Math.PI * 2, true);  
     this.ctx.fillStyle = 'red';
     this.ctx.closePath();
     this.ctx.fill();
+  }
+
+
+  collideWith(otherObject) {
+    if (otherObject instanceof Basket) {
+      console.log('Good Job!')
+    }
   }
 
   // clear() {
@@ -37,5 +46,12 @@ class Disc {
   // }
 
 }
+
+// Disc.prototype.collideWith = function collideWith(otherObject) {
+//   if (otherObject instanceof Basket) {
+//     console.log('Good Job!')
+//   }
+//   return false;
+// };
 
 export default Disc;
