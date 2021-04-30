@@ -1,4 +1,4 @@
-import CourseOne from './courses/courseOne.js';
+import CourseOne from './courseOne.js';
 import Player from "./player.js";
 import Basket from './basket.js';
 
