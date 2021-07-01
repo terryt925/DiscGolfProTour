@@ -10,6 +10,7 @@ document.addEventListener("DOMContentLoaded", function () {
   // let game;
   let game = new Game();
   document.getElementById("game").style.cursor = "pointer";
+  
 
   let isDrawing = false
   function draw(e){
